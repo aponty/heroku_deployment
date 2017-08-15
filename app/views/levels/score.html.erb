@@ -1,0 +1,8 @@
+<div class="scoreList">
+    HIGH SCORES
+    <% @scores.each do |score| %>
+        <div class="scoreitem">
+            <%= score.name %> : <%= score.score %>
+        </div>
+    <% end %>
+</div>

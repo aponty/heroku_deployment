@@ -1,0 +1,21 @@
+<script src='./engines/hand-1.3.7.js'></script>
+<script src='./engines/cannon.js'></script>
+<script src='./engines/babylon.js'></script>
+<div id='ammoLabel'>TIME: 0</div>
+<canvas id='canvas'></canvas>
+
+<div class="modalBackground">
+    <div class="modal">
+        <%= form_for(:levels, url: '/levels', :method => "post") do |f| %>
+          <div class="input-group">
+            <%= f.label :Name %>
+            <%= f.text_field :name %>
+          </div>
+          <%= f.hidden_field :score, :value => "0" %>
+          <%= f.hidden_field :level, :value => "2" %>
+          <%= f.submit :value => 'submit' %>
+        <% end %>
+    </div>
+</div>
+
+<script src="./racer/main.js"></script>

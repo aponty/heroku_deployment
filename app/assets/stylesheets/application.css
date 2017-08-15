@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas {
+    width: 100vw;
+    height: 100vh;
+    touch-action: none;
+}
+
+#gunsight {
+    position: absolute;
+    top: 52%;
+    left: 52%;
+    margin-top: -37px;
+    margin-left: -37px;
+    font-size: 40px;
+}
+
+#ammoLabel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 2em;
+}
+
+#scoreLabel {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: white;
+    font-size: 2em;
+}
+
+#lifeLabel {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    color: white;
+    font-size: 2em;
+}
+
+
+/*
+.level_buttons {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 25%
+}*/
+
+input {
+    width: 90%;
+    height: 30%;
+    font-size: 2em;
+    margin: 10px;
+}
+
+
+/*following two courtesy of julie*/
+
+.modalBackground {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(33, 33, 33, .5);
+    display: none;
+
+}
+
+.modal {
+    max-height: 60vh;
+    max-width: 40vw;
+    margin: 10% auto;
+    text-align: center;
+    line-height: 40px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.modalBackground.index {
+    background-color: white;
+    display: block
+}
+
+.scoreList {
+    font-size: 3em;
+    text-align: center;
+}
+
+.scoreitem {
+    font-size: .5em;
+    border: 2px solid black;
+    padding: 10px;
+}
